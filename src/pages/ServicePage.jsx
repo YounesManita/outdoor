@@ -14,9 +14,9 @@ const Services = () => {
         "Trabajamos con materiales de alta calidad para garantizar durabilidad.",
       ],
       images: [
-        "https://images.unsplash.com/photo-1543541650-764b9f831199?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400",
-        "https://images.unsplash.com/photo-1590512292424-6ca02e7ecb8b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400",
-        "https://images.unsplash.com/photo-1593642531847-b38e2871ee7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400",
+        "/assets/image2.jpg",
+        "/assets/imagesalb.jpeg",
+        "/assets/imagesalb1.jpeg",
       ],
       icon: "🧱",
     },
@@ -28,9 +28,9 @@ const Services = () => {
         "Soluciones rápidas y efectivas para problemas de plomería.",
       ],
       images: [
-        "https://images.unsplash.com/photo-1579764365733-10758e1dcb11?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400",
-        "https://images.unsplash.com/photo-1585745291075-e2286c8d7270?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400",
-        "https://images.unsplash.com/photo-1579553563192-61c1a8d98261?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400",
+        "/assets/Fontaneria.jpeg",
+        "/assets/Fontaneria1.jpeg",
+        "/assets/Fontaneria2.jpeg",
       ],
       icon: "🚰",
     },
@@ -42,9 +42,8 @@ const Services = () => {
         "Reparación e instalación de sistemas eléctricos de manera segura y eficiente.",
       ],
       images: [
-        "https://images.unsplash.com/photo-1603701836146-2c2f98d31a30?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400",
-        "https://images.unsplash.com/photo-1506755568160-35b5b8f52b25?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400",
-        "https://images.unsplash.com/photo-1600970745675-52b519199fa6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400",
+        "/assets/elctrica (2).jpg",
+        "/assets/elctrica.jpg",
       ],
       icon: "⚡",
     },
@@ -56,9 +55,10 @@ const Services = () => {
         "Aprovecha el sol y reduce tus costos energéticos.",
       ],
       images: [
-        "https://images.unsplash.com/photo-1507597720153-9600c318cb99?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400",
-        "https://images.unsplash.com/photo-1579763144329-0cbfa167fe0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400",
-        "https://images.unsplash.com/photo-1586266236396-099ee84e3b18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400",
+        "/assets/image3.jpg",
+        ,
+        "/assets/image9.jpg",
+        "/assets/466050098_947524060112505_5745889558631030824_n.jpg",
       ],
       icon: "☀️",
     },
@@ -70,9 +70,11 @@ const Services = () => {
         "Colores y acabados que se adaptan a tu estilo.",
       ],
       images: [
-        "https://images.unsplash.com/photo-1512820790803-194f1d97ed2f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400",
-        "https://images.unsplash.com/photo-1531250604287-44c6c5f7d3f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400",
-        "https://images.unsplash.com/photo-1557692568-f4c259219f1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400",
+          "/assets/pintura.jpeg",
+          "/assets/image4.jpg",
+          "/assets/imag1.jpg"
+        
+       
       ],
       icon: "🎨",
     },
@@ -84,9 +86,8 @@ const Services = () => {
         "Creación de espacios confortables con materiales de calidad.",
       ],
       images: [
-        "https://images.unsplash.com/photo-1584556311986-bdf04e33a6c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400",
-        "https://images.unsplash.com/photo-1551836027-95fd08f3b9b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400",
-        "https://images.unsplash.com/photo-1579720219860-b3873b1660b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400",
+        "/assets/image6.jpg",
+        "/assets/pintura2.jpeg",
       ],
       icon: "🛁",
     },
@@ -98,12 +99,27 @@ const Services = () => {
         "Trabajo a medida para satisfacer tus necesidades y gustos.",
       ],
       images: [
-        "https://images.unsplash.com/photo-1550836624-04b9f32bcf58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400",
-        "https://images.unsplash.com/photo-1563885466-f039045dffb6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400",
-        "https://images.unsplash.com/photo-1603384877006-b9a9a276a34e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400",
+        "/assets/najar2.jpeg",
+        "/assets/najar3.jpeg",
       ],
       icon: "🪚",
+      
     },
+      {
+        id: 8, // ID du nouveau service
+        title: "Pladur",
+        paragraphs: [
+          "Especialistas en instalación de pladur para paredes y techos.",
+          "Soluciones rápidas, económicas y estéticas para tus reformas.",
+        ],
+        images: [
+"/assets/pladur.jpeg",
+"/assets/paldur2.jpeg",   
+"/assets/paldur3.jpeg",   
+        ],
+        icon: "🛠️",
+      },
+ 
   ];
 
   const sliderSettings = {
@@ -134,7 +150,11 @@ const Services = () => {
             ? "pintura"
             : service.id === 6
             ? "bano"
+            
+            : service.id === 8
+            ? "pladur"
             : "carpinteria"
+           
           }`}
         >
           <div className="service-content">

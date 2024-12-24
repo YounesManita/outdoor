@@ -228,6 +228,13 @@ body {
     border: 2px solid rgba(0, 119, 182, 0.2);
     background: linear-gradient(to bottom, #d3d3d3, #e0f7fa, #ffffff); /* Application du dégradé ici */
 }
+.service-section {
+    padding: 60px 20px; /* Réduit le padding pour une hauteur plus petite */
+    max-width: 90%;
+    background-color: #ffffff;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(0, 119, 182, 0.2);
+}
 
 .service-section:hover {
     transform: scale(1.03);

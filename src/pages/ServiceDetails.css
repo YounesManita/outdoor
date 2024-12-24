@@ -1,194 +1,193 @@
-/* Overlay pour assombrir le fond */
-.modal-overlay {
+/* Général */
+.service-details-page {
+    font-family: 'Arial', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 1500px;
+    color: #333;
+  }
+  
+  .service-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #2c3e50;
+  }
+  
+  .service-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .service-icon {
+    font-size: 3rem;
+    color: #3498db;
+  }
+  
+  .service-carousel {
+    margin-bottom: 40px;
+    border-radius: 10px;
+  }
+  
+  .carousel-image-wrapper {
+    padding: 10px;
+  }
+  
+  .service-image {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    height: 400px; /* Fixe la hauteur des images */
+  }
+  
+  /* Description du service */
+  .service-description {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  
+  .service-paragraph {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #7f8c8d;
+  }
+  
+  /* Bouton Contact */
+  .contact-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 1.5rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Modale */
+  .modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Fond plus sombre pour plus de contraste */
+    background: rgba(0, 0, 0, 0.5);
     display: flex;
-    align-items: center;
     justify-content: center;
-    z-index: 1000;
+    align-items: center;
     opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-
-.modal-overlay.active {
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+  
+  .modal-overlay.active {
     opacity: 1;
-    visibility: visible;
-}
-
-/* Conteneur principal de la modal */
-.modal-container {
-    background: #fff;
-    border-radius: 15px; /* Arrondis modernes */
-    padding: 40px;
-    width: 90%;
-    max-width: 650px;
-    max-height: 80vh;
-    overflow-y: auto;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2); /* Ombre plus prononcée */
-    animation: scaleIn 0.5s ease-out;
-    position: relative;
-    transition: transform 0.3s ease-in-out;
-    border: 1px solid #f4b400; /* Ajout d'une bordure colorée */
-}
-
-/* Animation d'apparition */
-@keyframes scaleIn {
-    from {
-        transform: scale(0.9);
-        opacity: 0;
-    }
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
-/* Titre de la modal */
-.modal-container h2 {
+    pointer-events: all;
+  }
+  
+  .modal-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .modal-container h2 {
     font-size: 2rem;
-    font-weight: 700;
-    color: #2c3e50; /* Couleur de texte attrayante */
+    margin-bottom: 20px;
     text-align: center;
-    margin-bottom: 25px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-/* Formulaire */
-.contact-form {
+    color: #3498db;
+  }
+  
+  .contact-form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-}
-
-.contact-form label {
+  }
+  
+  .contact-form label {
     font-size: 1.1rem;
-    color: #333; /* Texte plus sombre pour une meilleure lisibilité */
-    margin-bottom: 8px;
-    font-weight: 600; /* Poids plus fort pour attirer l'attention */
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 12px;
     font-size: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background-color: #f9f9f9; /* Fond plus clair pour les champs */
-    transition: border 0.3s ease, background-color 0.3s ease;
-    box-sizing: border-box;
-}
-
-/* Focus sur les champs */
-.contact-form input:focus,
-.contact-form textarea:focus {
-    border-color: #fc4a1a; /* Couleur d'accentuation dynamique */
-    background-color: #fff;
-    outline: none;
-}
-
-/* Zone de texte */
-.contact-form textarea {
-    resize: none;
-    height: 140px;
-}
-
-/* Politique de confidentialité */
-.privacy-policy {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 0.95rem;
-    color: #777;
-}
-
-/* Bouton d'envoi */
-.contact-submit {
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     width: 100%;
-    padding: 18px;
-    background: linear-gradient(135deg, #fc4a1a, #f7b733);
-    color: #fff;
-    border: none;
-    font-size: 1.2rem;
-    border-radius: 10px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre douce pour donner un effet de profondeur */
-}
-
-.contact-submit:hover {
-    background: linear-gradient(135deg, #f7b733, #fc4a1a);
-    transform: translateY(-3px);
-}
-
-/* Bouton de fermeture */
-.modal-close {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background: none;
-    border: none;
-    font-size: 1.6rem;
-    color: #999;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.modal-close:hover {
-    color: #fc4a1a; /* Accent color au survol */
-}
-
-/* Ajout d'une bordure pour plus de style et de définition */
-.contact-submit:focus {
-    border: 2px solid #f7b733;
-}
-
-/* Pour les écrans plus petits, ajuster la largeur des éléments */
-@media (max-width: 600px) {
-    .modal-container {
-        padding: 20px; /* Réduction de la taille du padding */
-    }
-    .contact-form input,
-    .contact-form textarea {
-        padding: 14px;
-    }
-}
-.contact-btn {
-    background: linear-gradient(135deg, #fc4a1a, #f7b733); /* Dégradé dynamique */
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+    height: 150px;
+  }
+  
+  .privacy-policy {
+    margin-bottom: 20px;
+  }
+  
+  .privacy-policy input {
+    margin-right: 10px;
+  }
+  
+  .contact-submit {
+    padding: 15px;
+    background-color: #3498db;
     color: white;
-    padding: 12px 24px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    text-align: center;
-    border-radius: 50px; /* Bordure arrondie pour un look moderne */
+    font-size: 1.2rem;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
-    transition: all 0.3s ease; /* Transition pour l'effet de survol */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre douce */
-    display: inline-block;
-}
-
-/* Effet de survol */
-.contact-btn:hover {
-    background: linear-gradient(135deg, #f7b733, #fc4a1a);
-    transform: translateY(-4px); /* Légère élévation du bouton au survol */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Ombre plus prononcée */
-}
-
-/* Effet au focus */
-.contact-btn:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(252, 74, 26, 0.5); /* Focus clair avec un halo coloré */
-}
-
-/* Effet de clic */
-.contact-btn:active {
-    transform: translateY(2px); /* Légère dépression au clic */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Réduction de l'ombre */
-}
+    transition: background-color 0.3s;
+  }
+  
+  .contact-submit:hover {
+    background-color: #2980b9;
+  }
+  
+  .modal-close {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .modal-close:hover {
+    background-color: #c0392b;
+  }
+/* Carrousel */
+.service-carousel {
+    margin-bottom: 40px;
+    border-radius: 10px;
+  }
+  
+  .carousel-image-wrapper {
+    padding: 10px;
+  }
+  
+  .service-image {
+    width: 100%;
+    height: 200px; /* Réduit la hauteur des images */
+    object-fit: cover; /* Assure que l'image s'adapte bien sans déformation */
+    border-radius: 10px;
+  }
+    

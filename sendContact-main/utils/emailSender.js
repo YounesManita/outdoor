@@ -208,7 +208,7 @@ const sendEmailToAdmin = (contactDetails) => {
       <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
       
       <div class="social-icons">
-        <a href="https://www.facebook.com/tuempresa" target="_blank" class="social-icon">
+        <a href="https://www.facebook.com/profile.php?id=61571132330902" target="_blank" class="social-icon">
           <i class="fab fa-facebook-f"></i> <!-- Icône Facebook -->
         </a>
         <a href="https://www.instagram.com/tuempresa" target="_blank" class="social-icon">

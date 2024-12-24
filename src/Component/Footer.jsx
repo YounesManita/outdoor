@@ -1,32 +1,62 @@
 import React from 'react';
+import { FaInstagram, FaFacebook, FaTwitter, FaLinkedin, FaYoutube } from 'react-icons/fa';
 
 const Footer = () => (
   <footer style={styles.footer}>
     <div style={styles.container}>
-     
       <div style={styles.infoSection}>
-        <p style={styles.copy}>&copy; 2024 Portorreal Obros. Todos los derechos reservados.</p>
+        <p style={styles.copy}>&copy; 2024 OUTDOOR. Todos los derechos reservados.</p>
         <p style={styles.socialText}>Síguenos:</p>
         <div style={styles.socialIcons}>
-          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" style={styles.icon}>
-            <i className="fa fa-instagram"></i>
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={styles.icon}
+          >
+            <FaInstagram />
           </a>
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" style={styles.icon}>
-            <i className="fa fa-facebook"></i>
+          <a
+            href="https://www.facebook.com/profile.php?id=61571132330902"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={styles.icon}
+          >
+            <FaFacebook />
           </a>
-          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" style={styles.icon}>
-            <i className="fa fa-twitter"></i>
+          <a
+            href="https://www.twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={styles.icon}
+          >
+            <FaTwitter />
+          </a>
+          <a
+            href="https://www.linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={styles.icon}
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            href="https://www.youtube.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={styles.icon}
+          >
+            <FaYoutube />
           </a>
         </div>
       </div>
 
       <div style={styles.contactSection}>
-        <p style={styles.contactText}>Contactanos: <strong>contacto@portorreal.com</strong></p>
+        <p style={styles.contactText}>Contactanos: <strong>waelhsairi6@gmail.com</strong></p>
         <p style={styles.workHours}>
           Horarios de trabajo: Lunes - Viernes: 9:00 AM - 6:00 PM | Sábado: 10:00 AM - 2:00 PM
         </p>
       </div>
-
 
       <div style={styles.newsletterSection}>
         <h3 style={styles.newsletterTitle}>¡Suscríbete a nuestro boletín!</h3>
@@ -78,12 +108,9 @@ const styles = {
   },
   icon: {
     fontSize: '2rem',
-    color: '#fff',
+    color: '#333',
     textDecoration: 'none',
     transition: 'color 0.3s',
-  },
-  iconHover: {
-    color: '#ffc107',
   },
   contactSection: {
     textAlign: 'center',

@@ -1,12 +1,18 @@
 import React from 'react';
 import './AboutUs.css';
+import { useNavigate } from 'react-router-dom';
 
 const AboutUs = () => {
   const teamMembers = [
     { name: "Wael Hssairi", position: "CEO", image: "/assets/weal.jpg" },
     
   ];
-
+  
+ 
+  const navigate = useNavigate();
+  const handleClickabout=()=>{
+    navigate(`/contact`);
+  }
   return (
     <div className="about-us">
      
@@ -14,7 +20,7 @@ const AboutUs = () => {
         <div className="hero-content">
           <h1>Sobre Nosotros</h1>
           <p>Descubre nuestra historia y conoce a las personas increíbles detrás de nuestra empresa.</p>
-          <button className="cta-button">Saber Más</button>
+          <button onClick={() => handleClickabout()}  className="cta-button">Saber Más</button>
         </div>
       </header>
 
