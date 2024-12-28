@@ -87,10 +87,10 @@ const ServiceDetails = () => {
       </div>
 
       <button onClick={handleOpenModal} className="contact-btn">
-        Contactez-nous
+      Contáctenos
       </button>
 
-      {/* Modale de contact */}
+      
       <ContactModal isOpen={isModalOpen} onClose={handleCloseModal} />
     </div>
   );

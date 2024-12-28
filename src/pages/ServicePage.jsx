@@ -114,8 +114,8 @@ const Services = () => {
         ],
         images: [
 "/assets/pladur.jpeg",
-"/assets/paldur2.jpeg",   
-"/assets/paldur3.jpeg",   
+"/assets/pladur2.jpeg",   
+"/assets/pl dur3.jpeg",   
         ],
         icon: "🛠️",
       },
@@ -177,7 +177,7 @@ const Services = () => {
               ))}
             </Slider>
             <Link to={`/details/${service.id}`}  state={{ service }} className="service-button">
-              Voir Plus
+            Ver Más
             </Link>
           </div>
         </section>

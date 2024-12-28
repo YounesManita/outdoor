@@ -24,7 +24,7 @@ const AboutUs = () => {
         </div>
       </header>
 
-      {/* Sección sobre la empresa */}
+   
       <section className="company-section">
         <div className="container">
           <h2>Nuestra Empresa</h2>

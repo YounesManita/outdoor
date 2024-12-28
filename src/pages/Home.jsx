@@ -147,15 +147,7 @@ const Home = () => {
      
      
 
-      <div style={styles.sectionContent}>
-        <h2 style={styles.sectionTitle}>¿Por qué elegirnos?</h2>
-        <p style={styles.sectionText}>
-          En <span style={styles.brand}>Portorreal Obros</span>, nos enorgullece brindar servicios personalizados que superan las expectativas. 
-          Nuestros expertos trabajan con los mejores materiales para asegurar durabilidad y satisfacción en cada proyecto.
-        </p>
-        <button onClick={() => handleClickabout()}  style={styles.button}>Descubre Más</button>
-      </div>
-
+     
  
     </motion.div>
   </div>
@@ -398,7 +390,7 @@ const styles = {
   },
   hero: {
     textAlign: 'center',
-    backgroundColor: 'rgba(156, 172, 189, 0.5)', // Bleu transparent
+    backgroundColor: 'rgba(156, 172, 189, 0.5)', 
     borderRadius: '50px',
     margin: '2rem auto',
     width: '90%',
@@ -502,50 +494,50 @@ const styles = {
    
    
   
-    // Media Queries pour les écrans plus petits
+  
     '@media (max-width: 768px)': {
       hero: {
-        height: '250px', // Réduit la hauteur de la section héro sur mobile
+        height: '250px', 
         padding: '0.5rem',
       },
       heroTitle: {
-        fontSize: '2rem', // Réduit la taille du titre
+        fontSize: '2rem',
       },
       heroSubtitle: {
-        fontSize: '1rem', // Réduit la taille de la sous-titre
+        fontSize: '1rem',
       },
       sectionTitle: {
-        fontSize: '2rem', // Réduit la taille de titre de la section
+        fontSize: '2rem', 
       },
       serviceCards: {
-        gap: '1rem', // Réduit l'écart entre les cartes
-        flexDirection: 'column', // Aligne les cartes en colonne sur mobile
+        gap: '1rem', 
+        flexDirection: 'column',
       },
       card: {
-        maxWidth: '100%', // Les cartes prennent 100% de la largeur sur mobile
+        maxWidth: '100%', 
         padding: '1rem',
       },
       gallery: {
         marginTop: '2rem',
       },
       photoCard: {
-        maxWidth: '150px', // Réduit la taille des photos
+        maxWidth: '150px', 
       },
     },
   
-    // Media Queries pour les écrans plus petits que 480px (mobile)
+
     '@media (max-width: 480px)': {
       heroTitle: {
-        fontSize: '1.5rem', // Encore plus petit sur les très petits écrans
+        fontSize: '1.5rem', 
       },
       heroSubtitle: {
-        fontSize: '0.9rem', // Plus petit pour mobile
+        fontSize: '0.9rem', 
       },
       sectionTitle: {
-        fontSize: '1.8rem', // Plus petit pour mobile
+        fontSize: '1.8rem', 
       },
       photoDesc: {
-        fontSize: '0.8rem', // Réduit la taille de la description
+        fontSize: '0.8rem',
       },
     },
     
